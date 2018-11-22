@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+	margin: 0px 20px;
+
+}	
+	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+}
+
+li {
+    float: left;
+    text-align: left;
+    padding: 14px 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,Roboto,sans-serif;
+    font-size: 0.75rem;
+}
+
+li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.topNavRight{
+	float: right;
+	left: 10rem;
+}
+
+li a img{
+    width: 1rem;
+    height: 1rem;
+}
+
+li a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+
+li.dropDown {
+    display: inline-block;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropDownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+.dropDownContent a:hover {
+	background-color: #f1f1f1
+	display: block;
+	border: 5px;
+	
+}
+
+.dropDown:hover .dropDownContent{
+	display: block;
+	border: 5px solid #black;
+}
+
+
+#avatar{
+	padding: 15px 10px;
+	height: 46px;
+	width: 46px;
+	display: inline;
+	float: left;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topNav">
+	<ul>
+	  <li class="dropDown">
+		  <a href=""javascript:void(0)" class="dropbtn">Hi, Joe ▼</a>
+			<div class="dropDownContent">
+					<img src="images/avatar.png" alt="avatar" id="avatar">
+				<div class="uUserNameBlock">
+
+					<a href="#userName">Joe</a>
+					<a href="#userHandle">JoeHandle</a>
+				</div>
+				
+				<a href="#accountSettings">Account Settings</a>
+				<a href="#SignOut">Sign out</a>
+			</div>
+	  </li>
+	  <li>|</li>
+	  <li><a href="#DailyDeals">Daily Deals</a></li>
+	  <li>|</li>
+	  <li><a href="#GiftCards">Gift Cards</a></li>
+	  <li>|</li>
+	  <li><a href="#HelpAndContacts">Help & Contact</a></li>
+	  <div class="topNavRight">
+		  <li><a href="#Sell">Sell</a></li>
+		  <li>|</li>
+		  <li class="dropDown">
+			<a href="javascript:void(0)" class="dropbtn">My eBay</a>
+				<div class="dropDownContent">
+					<a href="#Summary">Summary</a>
+					<a href="#RecentlyViewed">Recently Viewed</a>
+					<a href="#BidsOffers">Bids/Offers</a>
+					<a href="#WatchList">Watch List</a>
+					<a href="#PurchaseHistory">Purchase History</a>
+					<a href="#Selling">Selling</a>
+					<a href="#SavedSearches">Saved Searches</a>
+					<a href="#SavedSellers">Saved Sellers</a>
+					<a href="#Messages">Messages</a>
+				</div>
+		</li>
+			
+		  <li><a href="#Bell"><img src="images/bell-512.png" alt="Bell"></a></li>
+		  <li>|</li>
+		  <li><a href="#Cart"><img src="images/shoppingCart.png" alt="Shopping Cart"></a></li>
+	  </div>
+	</ul>
+</div>
+
+</body>
+</html>
+
