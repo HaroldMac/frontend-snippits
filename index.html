@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Harold MacDonald</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<base href="/">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/profilePicture.png">			
+	<script>
+		function setUrl() {
+			var age = document.getElementById('age').value;
+			var gender = document.getElementById('gender').value;
+			var language = document.getElementById('language').value;
+			var restServer = "https://spheric-crowbar-222209.appspot.com/recommendation/" + age +"/" + gender + "/" + language;
+			document.getElementById("results").innerHTML = 22;		
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<nav>		
+			<ul>		
+				<li><a href="mailto:harold.macdonald52@gmail.com"><img src="images/email-icon.png" alt="harold.macdonald52@gmail.com" style = "width:32px; height:32px; border:0;"></a></li>
+				<li><a href="https://www.linkedin.com/in/harold-macdonald-ab2806106/"><img src="images/Linkedin-PNG.png" alt="Visit my LinkedIn" style = "width:32px; height:32px; border:0;"></a></li>
+				<li><a href="documents/HaroldResume.pdf"><img src="images/Resumes.png" alt="Check out my resume" style = "width:32px; height:32px; border:0;"></a></li>
+				<li><a href="https://github.com/HaroldMac/"><img src="images/GitHub-Mark-Light-32px.png" alt="Check out my GitHub"></a></li>
+			</ul>
+			<H1>Harold MacDonald</H1>
+		</nav>
+	</div>
+	
+	<div class="body">
+		<h2>Canadian Food Guide Nutritional Recommendation</h2>
+		Canada's Food Guide defines and promotes healthy eating for Canadians. It translates the science of nutrition and health into a healthy eating pattern. The Food Guide emphasizes the importance of combining healthy eating and physical activity. By following Canada's Food Guide, Canadians will be able to meet their nutrient needs and reduce their risk of obesity and chronic diseases such as type 2 diabetes, heart disease, certain types of cancer and osteoporosis.<br>
+		<br>
+		<form>
+			Age:<input type="text" name="age" value="18"><br>
+			Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female<br>
+			Language:<input type="radio" name="language" value="en" checked> English <input type="radio" name="language" value="fr"> French<br>
+			<br>
+			<input type="submit" value="Submit" onclick="setUrl()">
+		</form> 
+		<a href="https://spheric-crowbar-222209.appspot.com/recommendation/2/female/en">Find out more here</a>
+
+	</div>
+
+	<div class="footer">
+			<ul>
+			  <li><a href="#aboutMe">About Me</a></li><br>
+			  <li><a href="#nonTechnicalSkills">Non-Techical Experience</a></li><br>
+			  <li><a href="#technicalSkills">Technical Skills</a></li><br>
+			  <li><a href="#projectHistory">Project History</a></li><br>
+			  <li><a href="#workHistory">Work History</a></li><br>
+			  <li><a href="#education">Education</a></li>
+			</ul>
+			<div id="contactInfo">
+				<H2>Contact Me</H2>
+
+				Email me @ <a href="mailto:harold.macdonald52@gmail.com">harold.macdonald52@gmail.com</a> <br>
+				tel: (403) 606-3504 <br><br>
+			</div>  
+	</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+html,body {
+  height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+}
+h2{
+	margin: 0px 0px;
+}
+
+body {
+  	color: #fcfcfc;
+  	margin: 0; 	
+  	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+  	line-height:1.42;
+  	background-color: #595959;
+}
+
+nav {
+	list-style-type: none;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.875em;
+        overflow: hidden;
+        background-color: #333;
+}
+
+nav ul{
+	padding: 0;
+	list-style-type: none;
+	margin: 1em 0 0 0;
+	top: 0;
+	width: 95%;
+}
+
+nav li{
+	display: inline;
+	float: right;
+
+}
+
+.active{
+	background-color: #4CAF50;
+}
+
+nav li a{
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	display: block;
+	width: 60px;
+}
+
+nav li:hover{
+	background-color: #22A39F;
+	color: #000000;
+}
+
+nav h1{
+	font-size: 3em;
+	padding: 0.5em 0.5em 0.5em 1.5em;
+	margin: 0;
+}
+
+@media screen and (max-width: 800px){
+
+	nav ul{
+		width: 100%;
+	}
+
+
+	nav li a{
+		text-align: center;
+		padding: 0;
+	}
+	nav li a img{padding: 0;}
+	nav H1{
+		font-size: 1.5em;
+		text-align: center;
+		padding: 0.5em;
+	}
+}
+
+
+
+#main {
+	text-align: center;
+	margin: 0em;
+	padding: 0em;
+}
+
+#main img{
+	border-radius: 50%;
+	background-color: #fcfcfc;
+	margin: 0.5em;
+
+}
+
+ul{
+	text-align: center;
+	list-style-position: inside;
+}
+
+li{
+
+	list-style-type: circle;
+	padding: 0.5em;
+}
+
+#main #nonTechnicalSkills, #projectHistory, #education{
+	background-color: gray;
+}
+
+
+
+footer {
+	text-align: center;
+	list-style-type: none;
+	color: linen;
+	font-family: "Times New Roman", Times, serif;
+        overflow: hidden;
+        background-color: #333;
+        padding: 0.5em 0em;
+}
+
+
+
+
+footer ul {
+	width: 20%;
+	list-style-type: none;
+	margin: 0em;
+	text-align: left;
+	float: left;		
+}
+
+footer li{
+	display: inline;
+	float: left;
+	padding: 0em;
+}
+
+
+footer li a{
+	padding: 0em 0em 0em 0.5em;
+	display: block;
+}
+
+#contactInfo {
+  width: 72.5%;
+}
+
+#container {
+   height:100%;
+}
+	
+html, body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+#body {
+   padding:10px;
+   padding-bottom:13px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:131px;   /* Height of the footer */
+   background:#6cf;
+}
